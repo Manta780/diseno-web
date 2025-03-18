@@ -64,12 +64,13 @@ body {
   background-color: white;
   color: black;
 }
-.contenedor-header header .logo img{
-    width: 160px;
-    height: 50px;
-    position: absolute;
-    bottom: 5px;
-    left: 80px;}
+.contenedor-header header .logo img {
+  width: 160px;
+  height: 50px;
+  position: relative;
+  top: 50%;
+  right: 80px;
+}
 
 /* Secciones */
 .content-section {
@@ -280,11 +281,17 @@ body .content-section-nuestrosservicios{
 @media screen and (max-width: 768px) {
   .card-wrapper-nuestrosservicios {
     margin: 0 10px 25px;
-  }}
+  }
 
   .card-wrapper-nuestrosservicios .swiper-button-next{
     display: none;
   }
+
+  .card-wrapper-nuestrosservicios .swiper-button-prev{
+    display: none;
+  }
+}
+
 
 iframe {
   width: 100%;
@@ -296,7 +303,6 @@ iframe {
   background-image: url('images/fondoqnesSomos2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; /* Imagen estática */
   height: 100vh; /* Toda la pantalla */
   display: flex;
   justify-content: center; /* Centrar horizontalmente */
