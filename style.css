@@ -303,6 +303,7 @@ iframe {
   background-image: url('images/fondoqnesSomos2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh; /* Toda la pantalla */
   display: flex;
   justify-content: center; /* Centrar horizontalmente */
