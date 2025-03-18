@@ -7,8 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const totalImages = images.length;
     let autoSlide;
     let botones = document.querySelectorAll(".btn");
-    let infoDiv = document.getElementById("info");
-    const stars = document.querySelectorAll('.star');
 
     botones.forEach(boton => {
         boton.addEventListener("click", function () {
@@ -59,20 +57,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     startAutoSlide();
-
-    function mostrarInfo(tipo) {
-        let infoDiv = document.getElementById("info");
-        infoDiv.setAttribute("data-tipo", tipo);
-    
-        if (tipo === "cast") {
-            infoDiv.innerHTML = "<b>Reparto principal:</b><br> - Johnny Depp como Victor Van Dort<br> - Helena Bonham Carter como Emily, la Novia Cadáver<br> - Emily Watson como Victoria Everglot<br> - Albert Finney como Finis Everglot<br> - Richard E. Grant como Barkis Bittern<br> - Christopher Lee como el Pastor Galswells";
-        } else if (tipo === "guion") {
-            infoDiv.innerHTML = "<b>Guionistas:</b><br> - John August<br> - Caroline Thompson<br> - Pamela Pettler";
-            
-        } else if (tipo === "Directores") {
-            infoDiv.innerHTML = "<b>Directores:</b><br> - Tim Burton<br> - Mike Johnson<br>";
-            
-        }
-        
-    }
 });
