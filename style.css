@@ -287,12 +287,6 @@ body .content-section-nuestrosservicios{
     display: none;
   }
 
-  .card-wrapper-nuestrosservicios .swiper-button-prev{
-    display: none;
-  }
-
-
-
 iframe {
   width: 100%;
   height: 200px;
@@ -325,8 +319,4 @@ iframe {
 
 .sede {
   flex: 1; /* Ocupa la mitad derecha */
-}
-.asesoriaSeccion{
-  
-
 }
