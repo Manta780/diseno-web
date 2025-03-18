@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="style.css">
-<title>Spinning Center Gym</title>
-</head>
-<body>
+  <head>
+    <!-- Link Google fonts for icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <!-- Link SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css" />
 
-<!--Menu-->
-<div class="contenedor-header">
-    <header>    
+    <title>Spinning Center Gym</title>
+  </head>
+  <body>
+    <!--Menu-->
+    <div class="contenedor-header">
+      <header>
         <a href="#" class="logo">
-            <img src="images/logo2.png" alt="Logo gym">
+          <img src="images/logo2.png" alt="Logo gym" />
         </a>
         <nav id="nav">
-            <a href="#inicio">Inicio</a>
-            <a href="#planes">Nuestros planes</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#informacion">Informacion</a>
-            <a href="#entrenador">Entrenador personal</a>
+          <a href="#inicio">Inicio</a>
+          <a href="#planes">Nuestros planes</a>
+          <a href="#nuestrosservicios">Servicios</a>
+          <a href="#informacion">Informacion</a>
+          <a href="#entrenador">Entrenador personal</a>
         </nav>
         <a href="#" class="unete-btn">Unete</a>
+
     </header>
 </div>
 
@@ -30,11 +35,99 @@
         <img src="images/carrusel2.jpg" alt="IMG 2" />
         <img src="images/carrusel3.jpg" alt="IMG 3" />
         <img src="images/carrusel4.jpg" alt="IMG 4" />
-      </div>
-      <button class="prev" id="prev">&#10094;</button>
-      <button class="next" id="next">&#10095;</button>
+      </header>
     </div>
+
+    <!-- Inicio -->
+    <div id="inicio" class="content-section">
+      <div class="carousel-container">
+        <div class="carousel" id="carousel">
+          <img src="images/Carrusel1.jpg" alt="IMG 1" />
+          <img src="images/carrusel2.jpg" alt="IMG 2" />
+          <img src="images/carrusel3.jpg" alt="IMG 3" />
+          <img src="images/carrusel4.jpg" alt="IMG 4" />
+        </div>
+        <button class="prev" id="prev">&#10094;</button>
+        <button class="next" id="next">&#10095;</button>
+      </div>
+    </div>
+
+
+    <!-- Nuestros servicios -->
+    <div id="nuestrosservicios" class="content-section-nuestrosservicios">
+      <div class="container-nuestrosservicios swiper">
+        <div class="card-wrapper-nuestrosservicios">
+          <ul class="card-list-nuestrosservicios swiper-wrapper">
+            <li class="card-item-nuestrosservicios swiper-slide">
+              <a href="#" class="card-link-nuestrosservicios">
+                <img src="images/servicios1.jpg" alt="Card Image" class="card-image-nuestrosservicios">
+                <p class="badge-nuestrosservicios">SPINNING</p>
+                <h2 class="card-title-nuestrosservicios">Lunes 9:30 am y  6:30 pm </h2>
+                <h2 class="card-title-nuestrosservicios">¡Pedalea al ritmo de la adrenalina! Quema calorías y mejora tu resistencia con Spinning.</h2>
+                <button class="card-button
+                material-symbols-rounded">arrow_forward</button>
+              </a>
+            </li>
+            <li class="card-item-nuestrosservicios swiper-slide">
+              <a href="#" class="card-link-nuestrosservicios">
+                <img src="images/servicio2.jpg" alt="Card Image" class="card-image-nuestrosservicios">
+                <p class="badge-nuestrosservicios">FIT COMBAT</p>
+                <h2 class="card-title-nuestrosservicios">Viernes 7:15 am y 7:30 pm </h2>
+                <h2 class="card-title-nuestrosservicios">¡Golpea, patea y quema calorías! Potencia tu fuerza y resistencia con nuestras clases de Fit Combat.</h2>
+                <button class="card-button
+                material-symbols-rounded">arrow_forward</button>
+              </a>
+            </li>
+            <li class="card-item-nuestrosservicios swiper-slide">
+              <a href="#" class="card-link-nuestrosservicios">
+                <img src="images/servicio3.jpg" alt="Card Image" class="card-image-nuestrosservicios">
+                <p class="badge-nuestrosservicios">RUMBA</p>
+                <h2 class="card-title-nuestrosservicios">Martes 9:30 am y 8:30 pm </h2>
+                <h2 class="card-title-nuestrosservicios">¡Baila, quema calorías y diviértete! Sube la energía con nuestra explosiva clase de rumba.</h2>
+                <button class="card-button
+                material-symbols-rounded">arrow_forward</button>
+              </a>
+            </li>
+            <li class="card-item-nuestrosservicios swiper-slide">
+              <a href="#" class="card-link-nuestrosservicios">
+                <img src="images/servicio4.jpg" alt="Card Image" class="card-image-nuestrosservicios">
+                <p class="badge-nuestrosservicios">BOXEO</p>
+                <h2 class="card-title-nuestrosservicios">Miercoles 10:20 am y 5:30 pm </h2>
+                <h2 class="card-title-nuestrosservicios">¡Desata tu poder! Mejora tu resistencia, fuerza y velocidad con nuestra intensa clase de boxeo.</h2>
+                <button class="card-button
+                material-symbols-rounded">arrow_forward</button>
+              </a>
+            </li>
+            <li class="card-item-nuestrosservicios swiper-slide">
+              <a href="#" class="card-link-nuestrosservicios">
+                <img src="images/servicio5.jpg" alt="Card Image" class="card-image-nuestrosservicios">
+                <p class="badge-nuestrosservicios">YOGA</p>
+                <h2 class="card-title-nuestrosservicios">Jueves 8:15 am y 5:30 pm </h2>
+                <h2 class="card-title-nuestrosservicios">¡Equilibra tu cuerpo y mente! Mejora flexibilidad y elimina el estrés con nuestra clase de yoga.</h2>
+                <button class="card-button
+                material-symbols-rounded">arrow_forward</button>
+              </a>
+            </li>
+          </ul>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>  
+    </div>
+
+    
+    <!-- Linking SwiperJS scrip -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Linking custom scrip -->
+    <script src="script.js"></script>
+  </body>
+</html>
+
   </div>
+
 
 <div id="planes" class="content-section">
     <h2 class="tituloplanes">Ofertas destacadas</h2>
@@ -50,6 +143,32 @@
       </div>
     </div>
   </div>
+  <div id="informacion" class="quienesSomosSeccion">
+    <div class="tituloqS">
+        <!-- IZQUIERDA -->
+        <div class="texto">
+            <h1>QUIÉNES SOMOS?</h1>
+            <p>Somos un gimnasio comprometido con la salud y el bienestar de nuestros clientes.<br>
+            Ofrecemos equipos de última generación, entrenadores certificados y un ambiente <br> ideal
+            para mejorar tu condición física.</p>
+        </div>
+
+        <!-- DERECHA -->
+        <div class="sede">
+            <h3>Sede principal</h3>
+            <p>Estamos ubicados en una zona céntrica con fácil acceso.</p>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95373531531716!3d-37.81627917975179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f2b0b1f7%3A0x5045675218ce6e0!2sMelbourne%2C%20Australia!5e0!3m2!1sen!2sus!4v1617337387792!5m2!1sen!2sus" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</div>
+<div class="asesoriaSeccion">
+  
+</div>
   <script src="script.js"></script>
 </body>
 </html>
+
