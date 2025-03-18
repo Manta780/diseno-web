@@ -7,8 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const totalImages = images.length;
     let autoSlide;
     let botones = document.querySelectorAll(".btn");
-    let infoDiv = document.getElementById("info");
-    const stars = document.querySelectorAll('.star');
 
     botones.forEach(boton => {
         boton.addEventListener("click", function () {
