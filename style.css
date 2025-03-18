@@ -175,6 +175,162 @@ body {
   animation: none;
 }
 
+/*-------------------------------------Galeria ofertas---------------------------------------------------*/
+/* Estilos de la galería */
+/* Sección de Ofertas Destacadas */
+/* Sección de Ofertas Destacadas */
+#planes {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 0 20px;
+  background-image: url("images/posiblefondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-attachment: fixed;
+}
+
+.tituloplanes {
+  font-size: 32px;
+  color: yellow;
+  margin-bottom: 30px;
+}
+
+/* Contenedor de planes */
+.planes-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 20px;
+  padding: 10px;
+  max-width: 1200px; /* Limita el ancho máximo */
+  margin: auto; /* Centra la galería */
+}
+
+/* Estilos para cada oferta */
+.planes-container div {
+  background-color: #111;
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+  color: white;
+}
+
+.planes-container img {
+  width: 100%;
+  max-width: 280px; /* Evita que se agranden demasiado */
+  border-radius: 15px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+  .planes-container {
+    flex-direction: column; /* Apila las tarjetas en pantallas pequeñas */
+    align-items: center;
+  }
+}
+
+.planes-container img:hover {
+  opacity: 1;
+}
+
+/* Texto destacado en amarillo */
+.planes-container h2 {
+  font-size: 22px;
+  color: yellow;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+.planes-container p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Precio con tachado */
+.precio {
+  font-size: 26px;
+  font-weight: bold;
+  color: yellow;
+}
+
+.precio .tachado {
+  text-decoration: line-through;
+  font-size: 18px;
+  color: gray;
+}
+
+/* Restricciones del plan */
+.restriccion {
+  background-color: yellow;
+  color: black;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+/* Contenedor de botón comprar */
+.comprar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  position: relative;
+  right: 20px;
+}
+
+/* Botón de comprar */
+.boton {
+  display: inline-block;
+  background-color: yellow;
+  color: black;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.boton:hover {
+  background-color: white;
+}
+
+/* Icono de flecha (puedes usar FontAwesome o SVG) */
+.boton i {
+  font-size: 14px;
+}
+
+/* Botón de ver más */
+.ver-todos {
+  display: block;
+  background-color: yellow;
+  color: black;
+  padding: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 250px;
+  margin: 20px auto;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.ver-todos:hover {
+  background-color: white;
+}
+
+
+
+
 /* ------------------------------------Nuestros servicios "COTEGOAT" ------------------------------------ */
 body .content-section-nuestrosservicios{
   display: flex;
