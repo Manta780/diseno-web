@@ -281,7 +281,7 @@ body .content-section-nuestrosservicios{
 @media screen and (max-width: 768px) {
   .card-wrapper-nuestrosservicios {
     margin: 0 10px 25px;
-  }
+  }}
 
   .card-wrapper-nuestrosservicios .swiper-button-next{
     display: none;
