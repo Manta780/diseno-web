@@ -104,4 +104,16 @@ document.addEventListener("DOMContentLoaded", () => {
             },
         }
     });    
+
+    // Seleccionamos el navbar
+const navbar = document.getElementById("navbar");
+
+// Evento de scroll
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+        navbar.classList.add("scrolled"); // Agrega la clase cuando se hace scroll
+    } else {
+        navbar.classList.remove("scrolled"); // Quita la clase si está arriba
+    }
+});
 });

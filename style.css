@@ -17,7 +17,13 @@ body {
   background-color: rgb(0, 0, 0, 0.6);
   z-index: 99;
   padding: 0 20px;
+  transition: background 0.4s ease; /* Transición suave */
 }
+
+.contenedor-header.scrolled {
+  background: black; /* Nuevo color al hacer scroll */
+}
+
 .contenedor-header header {
   max-width: 1100px;
   margin: auto;
@@ -76,7 +82,7 @@ body {
 .content-section {
   height: 100vh;
   padding: 100px 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  border-bottom: 5px solid rgba(255, 255, 255, 0.6);
 }
 
 #inicio {
@@ -115,23 +121,35 @@ body {
 /* Botones */
 .prev,
 .next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
+  position: absolute; /* Se posicionan de forma absoluta dentro del .carousel-container */
+  top: 50%; /* A la mitad vertical */
+  transform: translateY(-50%); /* Centra verticalmente */
+  background-color: rgba(0, 0, 0, 0); /* Fondo semitransparente oscuro */
+  color: white; /* Texto/blanco icono en blanco */
+  border: none; /* Sin borde */
+  padding: 10px; /* Espacio interno */
+  cursor: pointer; /* Cursor tipo mano */
+  border-radius: 5px; /* Bordes redondeados */
 }
 
 .prev {
-  left: 10px;
+  left: 20px; /* Se separa 10px del borde izquierdo */
+  font-size: 60px;
+  transition: 0.3s ease;
 }
+
+/* Botón siguiente a la derecha */
 .next {
-  right: 10px;
+  right: 20px; /* Se separa 10px del borde derecho */
+  font-size: 60px;
+  transition: 0.3s ease;
 }
+
+.next:hover, .prev:hover{
+  color: yellow;
+  font-size: 80px;
+  
+} 
 
 /* Animaciones */
 @keyframes slide {
@@ -179,11 +197,21 @@ body {
 /* Estilos de la galería */
 /* Sección de Ofertas Destacadas */
 /* Sección de Ofertas Destacadas */
+.content-section-planes {
+  height: 100vh;
+  padding: 100px 20px;
+
+}
+
 #planes {
   width: 100%;
   height: 100%;
   text-align: center;
   padding: 0 20px;
+  
+}
+
+#planes, .content-section-nuestrosservicios{
   background-image: url("images/posiblefondo.jpg");
   background-repeat: no-repeat;
   background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
@@ -195,6 +223,8 @@ body {
   font-size: 32px;
   color: yellow;
   margin-bottom: 30px;
+  position: relative;
+  top: 100px;
 }
 
 /* Contenedor de planes */
@@ -204,10 +234,11 @@ body {
   flex-wrap: wrap;
   position: relative;
   gap: 20px;
-  padding: 10px;
+  padding: 100px;
   max-width: 1200px; /* Limita el ancho máximo */
   margin: auto; /* Centra la galería */
 }
+
 
 /* Estilos para cada oferta */
 .planes-container div {
@@ -332,15 +363,23 @@ body {
 
 
 /* ------------------------------------Nuestros servicios "COTEGOAT" ------------------------------------ */
-body .content-section-nuestrosservicios{
+.content-section-nuestrosservicios{
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-image: url("images/bgservicios.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
-  background-position: center; /* Centra la imagen */
+  flex-direction: column; /* Asegura que los elementos estén en columna */
+  justify-content: flex-start; /* Alinea arriba */
+  padding: 100px; /* Espacio desde arriba */
+  border-bottom: 5px solid rgba(255, 255, 255, 0.6);
+}
+
+.tituloservicios {
+  font-size: 32px;
+  color: yellow;
+  margin-bottom: 30px;
+  position: relative;
+  margin: 0;
 }
 
 .card-wrapper-nuestrosservicios{
@@ -434,6 +473,18 @@ body .content-section-nuestrosservicios{
   margin-top: -35px;
 }
 
+.descripcionservicios{
+  color: white;
+  font-size: 28px;
+  padding-left: 340px;
+  padding-right: 340px;
+  text-align: center;
+}
+
+.swiper-button-next .swiper-button-prev{
+  cursor: pointer; /* Cursor tipo mano */
+}
+
 @media screen and (max-width: 768px) {
   .card-wrapper-nuestrosservicios {
     margin: 0 10px 25px;
@@ -483,3 +534,5 @@ iframe {
 .sede {
   flex: 1; /* Ocupa la mitad derecha */
 }
+
+
