@@ -116,4 +116,56 @@ window.addEventListener("scroll", () => {
         navbar.classList.remove("scrolled"); // Quita la clase si está arriba
     }
 });
+
+const entrenadores = [
+    {
+        nombre: "Gustavo Contreras - Entrenador personal",
+        imagen: "images/entrenador1.jpg",
+        descripcion: "Con 34 años de experiencia y pasión por el fitness, estoy aquí para guiarte en tu camino hacia una mejor versión de ti mismo. Mi objetivo es ayudarte a alcanzar tus metas de manera efectiva y segura, ofreciéndote asesoramiento personalizado y motivación constante."
+    },
+    {
+        nombre: "Carlos Martínez - Especialista en fuerza",
+        imagen: "images/entrenador2.jpg",
+        descripcion: "Soy experto en levantamiento de pesas y acondicionamiento físico. Te ayudaré a mejorar tu fuerza, resistencia y técnica en el levantamiento de pesas."
+    },
+    {
+        nombre: "Julio López - Entrenador funcional",
+        imagen: "images/entrenador3.jpg",
+        descripcion: "Apasionado por el entrenamiento funcional y la movilidad. Mis entrenamientos están diseñados para mejorar tu rendimiento y prevenir lesiones."
+    }
+];
+
+// Hacer las funciones accesibles en el ámbito global
+window.cambiarEntrenador = function(index) {
+    document.getElementById("entrenador-img").src = entrenadores[index].imagen;
+    document.getElementById("entrenador-nombre").textContent = entrenadores[index].nombre;
+    document.getElementById("entrenador-descripcion").textContent = entrenadores[index].descripcion;
+    document.getElementById("info-entrenador").innerHTML = ""; // Limpia la info adicional al cambiar de entrenador
+};
+
+window.mostrarInfo = function(tipo, boton) {
+    // Obtener los divs de información
+    let infoHorarios = document.getElementById("info-horarios");
+    let infoContacto = document.getElementById("info-contacto");
+
+    // Ocultar ambos cuadros antes de mostrar el nuevo
+    infoHorarios.style.display = "none";
+    infoContacto.style.display = "none";
+
+    let infoDiv;
+    if (tipo === "horarios") {
+        infoDiv = infoHorarios;
+        infoDiv.innerHTML = "<b>Horarios:</b><br>Lunes a Viernes: 6:00 AM - 10:00 PM<br>Sábados: 8:00 AM - 4:00 PM";
+    } else if (tipo === "contacto") {
+        infoDiv = infoContacto;
+        infoDiv.innerHTML = "<b>Contacto:</b><br>Teléfono: +57 3205816622<br>Email: entrenador@gym.com";
+    }
+
+    // Si el cuadro ya estaba visible, ocultarlo
+    if (infoDiv.style.display === "block") {
+        infoDiv.style.display = "none";
+    } else {
+        infoDiv.style.display = "block";
+    }
+};
 });

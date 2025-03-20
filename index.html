@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css" />
 
+    <!-- Enlace a librería de iconos Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
     <title>Spinning Center Gym</title>
   </head>
   <body>
@@ -23,9 +29,9 @@
           <a href="#informacion">Informacion</a>
           <a href="#entrenador">Entrenador personal</a>
         </nav>
-        <a href="#" class="unete-btn">Unete</a>
+        <a href="#contactanos" class="unete-btn">Contacto</a>
 
-    </header>
+      </header>
     </div>
 
     <!-- Inicio -->
@@ -41,6 +47,7 @@
         <button class="next" id="next">&#10095;</button>
       </div>
     </div>
+    
 
 <!-- Ofertas destacadas -->
 <div id="planes" class="content-section-planes">
@@ -159,31 +166,169 @@
       <p class="descripcionservicios">Las clases grupales son una experiencia emocionante y llena de energía, donde el ritmo, la música y el movimiento se combinan para mejorar tu estado físico mientras te diviertes y te motivas en equipo.<p>  
     </div>
 
-<div id="informacion" class="quienesSomosSeccion">
-        <div class="tituloqS">
-            <!-- IZQUIERDA -->
-            <div class="texto">
-                <h1>QUIÉNES SOMOS?</h1>
-                <p>Somos un gimnasio comprometido con la salud y el bienestar de nuestros clientes.<br>
-                Ofrecemos equipos de última generación, entrenadores certificados y un ambiente <br> ideal
-                para mejorar tu condición física.</p>
+    <!-- Informacion -->
+    <section class="about-section-informacion">
+      <div id= "informacion" class="content-section-informacion">  
+        <div class="about-image-wrapper-informacion">
+          <img src="images/jefegym.jpg" alt="About"
+          class="about-image-informacion">
+        </div>
+        <div class="about-details-informacion">
+          <h2 class="section-title-informacion">Sobre Nosotros</h2>
+          <p class="text-informacion">En Spinning Center Gym, creemos que el entrenamiento es más que ejercicio: es una experiencia de superación y bienestar. Ofrecemos clases dinámicas de spinning y acondicionamiento físico, guiadas por instructores expertos en un ambiente motivador. Nuestro objetivo es ayudarte a mejorar tu resistencia, fuerza y salud con equipos de alta calidad y un enfoque personalizado. No importa tu nivel, aquí encontrarás la motivación para desafiarte cada día. ¡Únete y transforma tu vida!</p>
+          <div class="social-link-list">
+            <a href="" class="social-link"><i class="fa-brands
+            fa-facebook"></i></a>
+            <a href="" class="social-link"><i class="fa-brands
+            fa-instagram"></i></a>
+            <a href="" class="social-link"><i class="fa-brands
+            fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Entrenador Personal -->
+<div id="entrenador" class="entrenador-container">
+  <h2>¿Necesitas asesoría?</h2>
+  <p>Spinning Center Gym ofrece entrenadores certificados que evalúan tu condición física y te guían 
+      para alcanzar tus metas de forma segura y efectiva.</p>
+
+  <div class="entrenador-content">
+      <div class="entrenador-lista">
+          <img src="images/entrenador1.jpg" class="entrenador-foto" onclick="cambiarEntrenador(0)">
+          <img src="images/entrenador2.jpg" class="entrenador-foto" onclick="cambiarEntrenador(1)">
+          <img src="images/entrenador3.jpg" class="entrenador-foto" onclick="cambiarEntrenador(2)">
+      </div>
+
+      <div class="entrenador-info">
+          <img id="entrenador-img" src="images/entrenador1.jpg" alt="Entrenador">
+          <div class="entrenador-detalle">
+              <h3 id="entrenador-nombre">Gustavo Contreras - Entrenador personal</h3>
+              <p id="entrenador-descripcion">
+                  Con 34 años de experiencia y pasión por el fitness, estoy aquí para guiarte en tu camino 
+                  hacia una mejor versión de ti mismo. Mi objetivo es ayudarte a alcanzar tus metas de 
+                  manera efectiva y segura, ofreciéndote asesoramiento personalizado y motivación constante.
+              </p>
+              <div class="botones">
+                  <button class="btn amarillo">Contratar</button>
+                  <button class="btn negro" onclick="mostrarInfo('horarios', this)">Horarios</button>
+                  <div class="info-texto" id="info-horarios"></div> <!-- Cuadro para horarios -->
+              
+                  <button class="btn negro" onclick="mostrarInfo('contacto', this)">Contacto</button>
+                  <div class="info-texto" id="info-contacto"></div> <!-- Cuadro para contacto -->
+              </div>
+          </div>
+      </div>
+
+      <div id="info-entrenador" class="info-entrenador"></div>
+  </div>
+</div>
+
+<!-- Contactanos -->
+    <div id="contactanos" class="content-section">
+      <h2 class="titulocontacto">Contáctanos</h2>
+  
+      <div class="contacto" id="contacto">
+          <!-- Formulario -->
+          <form action="#" class="formscontacto">
+              <input type="text" placeholder="Inserta tu nombre" class="form-input" required>
+              <input type="email" placeholder="Inserta tu email" class="form-input" required>
+              <textarea placeholder="Inserta tu pregunta" class="form-input" required></textarea>
+              <button type="submit">Enviar</button>
+          </form>
+  
+          <!-- Información de contacto -->
+          <div class="infocontacto">
+              <p><strong>¡También puedes contactarnos por estos medios!</strong></p>
+              <ul class="listacontacto">
+                  <li>
+                      <img src="images/whatsapp-logo.png" alt="WhatsApp">
+                      +57 301 197 7168
+                  </li>
+                  <li>
+                      <img src="images/gmail-logo.png" alt="Instagram">
+                      <a>servicioalcliente@spinningcentergym.com</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+
+        <!-- Pie de página de la web -->
+        <footer class="footer">
+          <!-- Contenedor principal del footer, agrupa todas las secciones -->
+          <div class="footer-content">
+            <!-- Sección izquierda con tres columnas: Compañía, Ayuda y Redes Sociales -->
+            <div class="left-sections">
+              <!-- Primera columna: Información sobre la compañía -->
+              <div class="column">
+                <h3>Informacion</h3>
+                <ul>
+                  <li><a href="https://es.wikipedia.org/wiki/Corpse_Bride" target="_blank" >Acerca de la pelicula</a></li>
+                  <li><a href="https://www.primevideo.com/-/es/detail/El-Cad%C3%A1ver-de-la-Novia/0MA01J9LLQO69EGL52IVJZKVT3" target="_blank" >¿Dónde ver la película?</a></li>
+                  <li><a href="https://cinreservas.com/resenas/el-cadaver-de-la-novia-resena/" target="_blank" >Historia y ambientación</a></li>
+                  <li><a href="https://www.tiempodecine.co/web/hasta-que-la-muerte-los-separe-el-cadaver-de-la-novia-de-tim-burton/" target="_blank" >Noticias y actualizaciones</a></li>
+                </ul>
+              </div>
+    
+              <!-- Segunda columna: Sección de ayuda al usuario -->
+              <div class="column">
+                <h3>Soporte</h3>
+                <ul>
+                  <li><a href="https://www.proprofs.com/quiz-school/story.php?title=3dq-how-well-do-you-know-the-corpse-bride" target="_blank" >Cuestionario</a></li>
+                  <li><a href="https://www.timburton.com/" target="_blank" >Asistencia/FAQS</a></li>
+                  <li><a href="https://es.wikipedia.org/wiki/Corpse_Bride#Referencias" target="_blank" >Términos y condiciones</a></li>
+                  <li><a href="https://es.wikipedia.org/wiki/Corpse_Bride#Premios" target="_blank" >Premios</a></li>
+                </ul>
+              </div>
+    
+              <!-- Tercera columna: Enlaces a redes sociales -->
+              <div class="column">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                  <!-- Icono y enlace a Instagram -->
+                  <a href="https://www.instagram.com/timburton/?hl=es" target="_blank" class="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <!-- Icono y enlace al sitio web oficial -->
+                  <a href="https://www.timburton.com/" target="_blank" class="website">
+                    <i class="fa-solid fa-globe"></i>
+                  </a>
+                  <!-- Icono y enlace a Facebook -->
+                  <a href="https://www.facebook.com/TimBurton/?locale=es_LA" target="_blank" class="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <!-- Icono y enlace a Twitter/X -->
+                  <a href="https://x.com/ItsTimBurtonBz" target="_blank" class="twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                  </a>
+                </div>
+              </div>
             </div>
     
-            <!-- DERECHA -->
-            <div class="sede">
-                <h3>Sede principal</h3>
-                <p>Estamos ubicados en una zona céntrica con fácil acceso.</p>
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.680483683889!2d-74.0607703153872!3d4.650956130046811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a4186de42b1%3A0xda82a46f4ae1181!2sSpinning%20Center%20Gym%20Rosales!5e0!3m2!1ses!2sco!4v1742342938007!5m2!1ses!2sco" 
-                    allowfullscreen="" 
-                    loading="lazy">
-                </iframe>
+            <!-- Sección derecha: Mapa incrustado usando Google Maps -->
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1241.117884394976!2d-0.00574605!3d51.52723535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761d5989b46fe3%3A0xb419f305dabf6188!2s3%20Mills%20Studios%2C%20Three%20Mill%20Ln%2C%20London%20E3%203DU%2C%20Reino%20Unido!5e0!3m2!1ses!2sco!4v1741651114534!5m2!1ses!2sco"
+                width="400"
+                height="200"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
-        </div>
-    </div>
-    <div class="asesoriaSeccion">
-      
-    </div>
+          </div>
+    
+          <!-- Parte inferior del footer: Derechos reservados -->
+          <div class="footer-bottom">
+            <p>
+              &copy; 2025 Corpse Bridge - Todos los derechos reservados - Inspirado
+              en la obra de Tim Burton - Desarrollado por - Santiago Cote - Juan Mantilla - Juan Espinoza
+            </p>
+          </div>
+        </footer>
 
     
     <!-- Linking SwiperJS script -->
