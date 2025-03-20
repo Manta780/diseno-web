@@ -117,6 +117,7 @@ window.addEventListener("scroll", () => {
     }
 });
 
+// Funcion para las descripciones de los entrenadores 
 const entrenadores = [
     {
         nombre: "Gustavo Contreras - Entrenador personal",
