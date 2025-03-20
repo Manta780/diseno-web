@@ -529,6 +529,11 @@ body {
 .about-section-informacion{
   padding: 130px;
   background: var(--light-pink-color);
+  background-image: url("images/sinopsis.png");
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-attachment: fixed;
 
 }
 
@@ -550,6 +555,8 @@ body {
 .section-title-informacion{
   text-align: center;
   padding: 60px 0 100px;
+  color: white;
+  font-weight: 200;
   text-transform: uppercase;
   font-size: x-large;
 }
@@ -575,6 +582,7 @@ body {
 .about-section-informacion .about-details-informacion .text-informacion {
   line-height: 30px;
   margin: 50px 0 30px;
+  color: white;
   text-align: center;
   font-size: 22px;
 }
@@ -586,13 +594,13 @@ body {
 }
 
 .about-section-informacion .social-link-list .social-link{
-  color: black;
+  color: yellow;
   font-size: large;
   transition: 0.2s ease;
 }
 
 .about-section-informacion .social-link-list .social-link:hover{
-  color: yellow;
+  color: rgb(255, 255, 255);
 }
 
 
@@ -600,18 +608,29 @@ body {
 /* ------------------------------------ Entrenador personal ------------------------------------ */
 /* Sección de entrenador personal */
 .entrenador-container {
+  background-image: url("images/fondoentrenador.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-attachment: fixed;
   text-align: center;
+  width: 100%;
   padding: 130px;
-  max-width:1300px;
   margin: auto;
   height: 100vh;
 }
 
 .entrenador-container h2 {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: bold;
   padding: 10px;
   margin-bottom: 10px;
+  color:yellow;
+}
+
+.text-entrenador1{
+  color:white;
+  font-size: 27px;
 }
 
 .entrenador-content {
@@ -662,11 +681,13 @@ body {
 .entrenador-detalle h3 {
   font-size: 25px;
   font-weight: bold;
+  color:white;
 }
 
 .entrenador-detalle p {
   font-size: 20px;
   margin: 10px 0;
+  color:white;
 }
 
 /* Botones */
@@ -731,13 +752,13 @@ position: absolute; /* Posiciona relativo al botón */
 /* ------------------------------------ Estilos de Contactanos ------------------------------------*/
   /* Sección de contacto */
   #contactanos {
-    max-width: 80%;
+    max-width: 100%;
     margin: auto;
     padding: 100px;
     background-color: #f8f8f8;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-image: url("images/contactoimg.jpg");
+    background-image: url("images/contacto.jpg");
     background-repeat: no-repeat;
     background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
     background-position: center; /* Centra la imagen */
@@ -749,6 +770,7 @@ position: absolute; /* Posiciona relativo al botón */
     text-align: center;
     font-size: 28px;
     margin-bottom: 60px;
+    color:white;
   }
   
   /* Contenedor principal */
@@ -779,7 +801,7 @@ position: absolute; /* Posiciona relativo al botón */
   
   .contacto button {
     background-color: #ffcc00;
-    color: black;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     padding: 10px;
     border: none;
@@ -803,11 +825,17 @@ position: absolute; /* Posiciona relativo al botón */
     padding: 20px;
   }
   
+  .text-contacto{
+    color:white;
+    font-size: 24px;
+  }
+
   .listacontacto li {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
     font-size: 24px;
+    color:white;
   }
   
   .listacontacto i {
